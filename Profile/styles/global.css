@@ -1,0 +1,55 @@
+@import url('./header.css');
+@import url('./main.css');
+@import url('./footer.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #010409;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.light {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(to right, #00EDF0, #0AFA43);
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 2px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #00EDF0, #0AFA43);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  background-color: #0d1117;
+}
